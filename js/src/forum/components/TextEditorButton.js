@@ -39,7 +39,7 @@ export default class TextEditorButton extends Component {
       {
         className: 'LatexPro-buttonsDropdown',
         buttonClassName: 'Button Button--flat',
-        label: icon('fas fa-superscript'),
+        label: icon('fas fa-function'),
       },
       this.items().toArray()
     );
@@ -52,7 +52,7 @@ export default class TextEditorButton extends Component {
       'latex-pro-blockButton',
       Button.component(
         {
-          icon: 'fas fa-vector-square',
+          icon: 'fas fa-square',
           onclick: () => this.wrapSelection(true),
         },
         app.translator.trans('zephyrisle-latex-pro.forum.composer.block_expression' + (this.isAsciiMath ? '_asciimath' : ''))
@@ -64,7 +64,7 @@ export default class TextEditorButton extends Component {
       'latex-pro-inlineButton',
       Button.component(
         {
-          icon: 'fas fa-grip-lines',
+          icon: 'fas fa-minus',
           onclick: () => this.wrapSelection(),
         },
         app.translator.trans('zephyrisle-latex-pro.forum.composer.inline_expression' + (this.isAsciiMath ? '_asciimath' : ''))
