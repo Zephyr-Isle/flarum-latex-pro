@@ -12,7 +12,7 @@
 
 namespace Zephyrisle\LatexPro;
 
-use Flarum\Api\Serializer\ForumSerializer;
+use Flarum\Api\Resource\ForumResource;
 use Flarum\Extend;
 
 return [
@@ -26,13 +26,14 @@ return [
 
     (new Extend\Locales(__DIR__.'/locale')),
 
-    (new Extend\ApiSerializer(ForumSerializer::class))
-        ->attributes(LoadSettings::class),
-
     (new Extend\Formatter())
         ->configure(ConfigureTextFormatter::class),
 
+    (new Extend\ApiResource(ForumResource::class))
+        ->fields(AddForumAttributes::class),
+
     (new Extend\Settings())
+        // Defaults
         ->default('zephyrisle-latex-pro.alias_block_delimiters', '$%e%$,₺₺%e%₺₺')
         ->default('zephyrisle-latex-pro.alias_inline_delimiters', '\\(%e%\\)')
         ->default('zephyrisle-latex-pro.block_delimiters', '[math]%e%[/math]')
@@ -61,8 +62,11 @@ return [
         ->registerLessConfigVar(
             'config-copy-tex',
             'zephyrisle-latex-pro.enable_copy_tex',
-            function ($setting) {
-                return \boolval($setting) ? 'true' : 'false';
-            }
-        ),
+            fn ($v) => \boolval($v) ? 'true' : 'false'
+        )
+        // Expose settings to the forum frontend via app.forum.attribute(...)
+        ->serializeToForum('latex-pro.allow_asciimath', 'zephyrisle-latex-pro.allow_asciimath', fn ($v) => \boolval($v))
+        ->serializeToForum('latex-pro.enable_editor_buttons', 'zephyrisle-latex-pro.enable_editor_buttons', fn ($v) => \boolval($v))
+        ->serializeToForum('latex-pro.aliases_as_primary', 'zephyrisle-latex-pro.aliases_as_primary', fn ($v) => \boolval($v))
+        ->serializeToForum('latex-pro.enable_copy_tex', 'zephyrisle-latex-pro.enable_copy_tex', fn ($v) => \boolval($v)),
 ];
