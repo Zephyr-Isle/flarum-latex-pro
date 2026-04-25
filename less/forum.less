@@ -1,0 +1,9 @@
+@import (css) "https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css";
+
+@import "forum/text-editor";
+
+.Post-quoteButtonContainer {
+  & when (@config-copy-tex = true) {
+    display: none !important;
+  }
+}

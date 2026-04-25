@@ -1,0 +1,44 @@
+{
+    "name": "zephyrisle/latex-pro",
+    "description": "TeX math rendering for your Flarum forum.",
+    "keywords": [
+        "flarum",
+        "latex-pro",
+        "mathematics",
+        "expressions",
+        "tex",
+        "latex",
+        "katex"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zephyrisle",
+            "email": "zephyr_isle@outlook.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Zephyr-Isle/flarum-latex-pro/issues",
+        "source": "https://github.com/Zephyr-Isle/flarum-latex-pro"
+    },
+    "require": {
+        "flarum/core": "^2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zephyrisle\\LatexPro\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "LaTeX Pro",
+            "category": "formatting",
+            "icon": {
+                "name": "fas fa-square-root-alt",
+                "backgroundColor": "#b72a2a",
+                "color": "#fff"
+            }
+        }
+    }
+}
