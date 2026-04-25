@@ -35,7 +35,7 @@
             "title": "LaTeX Pro",
             "category": "formatting",
             "icon": {
-                "name": "fas fa-square-root-alt",
+                "name": "fas fa-square-root-variable",
                 "backgroundColor": "#b72a2a",
                 "color": "#fff"
             }
