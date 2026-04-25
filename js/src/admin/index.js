@@ -8,18 +8,12 @@
  * file that was distributed with this source code.
  */
 
-import { extend } from 'flarum/common/extend';
-import app from 'flarum/common/app';
+import app from 'flarum/admin/app';
 import ExtensionPage from 'flarum/admin/components/ExtensionPage';
 import Select from 'flarum/common/components/Select';
 import Switch from 'flarum/common/components/Switch';
 
-app.initializers.add('zephyrisle-latex-pro', (app) => {
-  extend(ExtensionPage.prototype, 'sections', function (items) {
-    if (this.extension.id != 'zephyrisle-latex-pro') return;
-    items.has('permissions') ? items.remove('permissions') : '';
-  });
-
+app.initializers.add('zephyrisle-latex-pro', () => {
   app.extensionData.for('zephyrisle-latex-pro').registerSetting(function () {
     return (
       <div className="LatexPro-SettingsContainer">
