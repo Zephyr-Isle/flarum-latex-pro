@@ -39,7 +39,7 @@ export default class TextEditorButton extends Component {
       {
         className: 'LatexPro-buttonsDropdown',
         buttonClassName: 'Button Button--flat',
-        label: icon('fas fa-square-root-variable'),
+        label: icon('fas fa-superscript'),
       },
       this.items().toArray()
     );
