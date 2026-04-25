@@ -15,7 +15,7 @@ import TextEditorButton from './components/TextEditorButton';
 
 export default function addTextEditorButton() {
   extend(TextEditor.prototype, 'toolbarItems', function (items) {
-    if (app.forum.attribute('latex-pro.enable_editor_buttons') === true) {
+    if (app.forum.attribute('latex-pro.enable_editor_buttons')) {
       items.add('zephyrisle-latex-pro', <TextEditorButton textEditor={this.attrs.composer.editor} />);
     }
   });
