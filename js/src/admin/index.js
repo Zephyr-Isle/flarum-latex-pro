@@ -9,7 +9,6 @@
  */
 
 import app from 'flarum/admin/app';
-import ExtensionPage from 'flarum/admin/components/ExtensionPage';
 import Select from 'flarum/common/components/Select';
 import Switch from 'flarum/common/components/Switch';
 
