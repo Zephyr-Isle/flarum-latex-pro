@@ -1,0 +1,50 @@
+zephyrisle-latex-pro:
+  admin:
+    settings:
+      katex_options_heading: KaTeX 选项
+      delimiters_label: 分隔符
+      delimiters_text: 用逗号分隔。<strong>%e%</strong> 代表数学表达式。
+      block_delimiters_text: 块级表达式的 <strong>BBCode</strong> 分隔符
+      inline_delimiters_text: 行内表达式的 <strong>BBCode</strong> 分隔符
+      alias_block_delimiters_text: 块级表达式的<strong>别名</strong>分隔符
+      alias_inline_delimiters_text: 行内表达式的<strong>别名</strong>分隔符
+      block_asciimath_delimiters_text: 块级 AsciiMath 表达式的 <strong>BBCode</strong> 分隔符
+      inline_asciimath_delimiters_text: 行内 AsciiMath 表达式的 <strong>BBCode</strong> 分隔符
+      alias_block_asciimath_delimiters_text: 块级 AsciiMath 表达式的<strong>别名</strong>分隔符
+      alias_inline_asciimath_delimiters_text: 行内 AsciiMath 表达式的<strong>别名</strong>分隔符
+      primary_delimiters_text: 上述列表中的第一个分隔符将被视为主分隔符。
+      output_mode_label: 输出模式
+      output_mode_text: 选择输出的标记语言
+      error_color_label: 不支持的命令或无效 LaTeX 的颜色
+      error_color_text: 选择在<strong>禁用错误抛出时</strong>渲染不支持的命令和无效 LaTeX 的颜色。
+      sizing_options_heading: 尺寸选项
+      minimum_thickness_text: 最小厚度 (em)
+      maximum_size_text: 最大尺寸 (em)
+      macros_label: 宏
+      macros_text: 自定义宏的集合。
+      java_syntax_text: 您必须使用 JavaScript 语法编写它们。
+      maximum_expand_limit_text: 最大展开限制
+      enable_fleqn_label: 启用左对齐方程 (fleqn)
+      enable_leqno_label: 启用左侧方程编号 (leqno)
+      color_is_text_color_label: 允许 <code>\color</code> 命令接受两个参数 (colorIsTextColor)
+      throw_on_error_label: 遇到不支持的命令或无效 LaTeX 时抛出错误
+      bbcode_delimiters_rule_text: BBCode 分隔符只能由大写或小写字母和破折号组成。
+      cdn_options_heading: CDN 选项
+      cdn_katex_text: <strong>KaTeX</strong> 的 CDN URL
+      sri_katex_text: <strong>KaTeX</strong> 的 SRI 哈希
+      cdn_asciimath2tex_text: <strong>asciimath2tex</strong> 的 CDN URL
+      sri_asciimath2tex_text: <strong>asciimath2tex</strong> 的 SRI 哈希
+      other_options_heading: 其他选项
+      enable_editor_buttons_label: 在文本编辑器上显示按钮
+      aliases_as_primary_label: 尽可能使用别名分隔符作为主分隔符
+      allow_asciimath_label: 允许 AsciiMath 语法
+      enable_copy_tex_label: 允许复制 KaTeX 渲染元素的源代码
+      quote_button_text: 您必须启用 <code>flarum/mentions</code> 扩展才能激活引用按钮。
+
+  forum:
+    composer:
+      block_expression: 块级表达式
+      block_expression_asciimath: 块级表达式 (AsciiMath)
+      inline_expression: 行内表达式
+      inline_expression_asciimath: 行内表达式 (AsciiMath)
+      asciimath_only: 仅 AsciiMath

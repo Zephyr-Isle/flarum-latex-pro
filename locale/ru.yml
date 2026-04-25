@@ -1,0 +1,50 @@
+zephyrisle-latex-pro:
+  admin:
+    settings:
+      katex_options_heading: Параметры KaTeX
+      delimiters_label: Разделители
+      delimiters_text: Разделяйте их запятыми. <strong>%e%</strong> обозначает математическое выражение.
+      block_delimiters_text: Разделители <strong>BBCode</strong> для блочных выражений
+      inline_delimiters_text: Разделители <strong>BBCode</strong> для встроенных выражений
+      alias_block_delimiters_text: <strong>Псевдонимы</strong> разделителей для блочных выражений
+      alias_inline_delimiters_text: <strong>Псевдонимы</strong> разделителей для встроенных выражений
+      block_asciimath_delimiters_text: Разделители <strong>BBCode</strong> для блочных выражений AsciiMath
+      inline_asciimath_delimiters_text: Разделители <strong>BBCode</strong> для встроенных выражений AsciiMath
+      alias_block_asciimath_delimiters_text: <strong>Псевдонимы</strong> разделителей для блочных выражений AsciiMath
+      alias_inline_asciimath_delimiters_text: <strong>Псевдонимы</strong> разделителей для встроенных выражений AsciiMath
+      primary_delimiters_text: Первые разделители в приведенных выше списках будут считаться основными.
+      output_mode_label: Режим вывода
+      output_mode_text: Выберите язык разметки для вывода
+      error_color_label: Цвет неподдерживаемых команд или недопустимого LaTeX
+      error_color_text: Выберите цвет, в котором отображаются неподдерживаемые команды и недопустимый LaTeX, <strong>когда выброс ошибок отключен</strong>.
+      sizing_options_heading: Параметры размера
+      minimum_thickness_text: Минимальная толщина (em)
+      maximum_size_text: Максимальный размер (em)
+      macros_label: Макросы
+      macros_text: Коллекция пользовательских макросов.
+      java_syntax_text: Вы должны писать их, используя синтаксис JavaScript.
+      maximum_expand_limit_text: Максимальный лимит расширения
+      enable_fleqn_label: Включить выравнивание уравнений по левому краю (fleqn)
+      enable_leqno_label: Включить номера уравнений слева (leqno)
+      color_is_text_color_label: Разрешить команде <code>\color</code> принимать два аргумента (colorIsTextColor)
+      throw_on_error_label: Выбрасывать ошибку при неподдерживаемой команде или недопустимом LaTeX
+      bbcode_delimiters_rule_text: Разделители BBCode должны состоять только из прописных или строчных букв и дефисов.
+      cdn_options_heading: Параметры CDN
+      cdn_katex_text: URL CDN для <strong>KaTeX</strong>
+      sri_katex_text: Хеш SRI для <strong>KaTeX</strong>
+      cdn_asciimath2tex_text: URL CDN для <strong>asciimath2tex</strong>
+      sri_asciimath2tex_text: Хеш SRI для <strong>asciimath2tex</strong>
+      other_options_heading: Другие параметры
+      enable_editor_buttons_label: Показывать кнопки в текстовом редакторе
+      aliases_as_primary_label: Использовать псевдонимы разделителей в качестве основных разделителей, если возможно
+      allow_asciimath_label: Разрешить синтаксис AsciiMath
+      enable_copy_tex_label: Разрешить копирование исходного кода элементов, отрисованных KaTeX
+      quote_button_text: Вы должны включить расширение <code>flarum/mentions</code>, чтобы активировать кнопку цитирования.
+
+  forum:
+    composer:
+      block_expression: Блочное выражение
+      block_expression_asciimath: Блочное выражение (AsciiMath)
+      inline_expression: Встроенное выражение
+      inline_expression_asciimath: Встроенное выражение (AsciiMath)
+      asciimath_only: Только AsciiMath

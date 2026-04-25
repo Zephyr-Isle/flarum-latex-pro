@@ -1,0 +1,50 @@
+zephyrisle-latex-pro:
+  admin:
+    settings:
+      katex_options_heading: KaTeX-Optionen
+      delimiters_label: Trennzeichen
+      delimiters_text: Trennen Sie sie durch Kommas. <strong>%e%</strong> steht für mathematische Ausdrücke.
+      block_delimiters_text: <strong>BBCode</strong>-Trennzeichen für Blockausdrücke
+      inline_delimiters_text: <strong>BBCode</strong>-Trennzeichen für Inline-Ausdrücke
+      alias_block_delimiters_text: <strong>Alias</strong>-Trennzeichen für Blockausdrücke
+      alias_inline_delimiters_text: <strong>Alias</strong>-Trennzeichen für Inline-Ausdrücke
+      block_asciimath_delimiters_text: <strong>BBCode</strong>-Trennzeichen für AsciiMath-Blockausdrücke
+      inline_asciimath_delimiters_text: <strong>BBCode</strong>-Trennzeichen für AsciiMath-Inline-Ausdrücke
+      alias_block_asciimath_delimiters_text: <strong>Alias</strong>-Trennzeichen für AsciiMath-Blockausdrücke
+      alias_inline_asciimath_delimiters_text: <strong>Alias</strong>-Trennzeichen für AsciiMath-Inline-Ausdrücke
+      primary_delimiters_text: Die ersten Trennzeichen in den obigen Listen werden als primär betrachtet.
+      output_mode_label: Ausgabemodus
+      output_mode_text: Wählen Sie die Auszeichnungssprache für die Ausgabe
+      error_color_label: Farbe nicht unterstützter Befehle oder ungültiger LaTeX
+      error_color_text: Wählen Sie die Farbe, in der nicht unterstützte Befehle und ungültiger LaTeX gerendert werden, <strong>wenn das Auslösen von Fehlern deaktiviert ist</strong>.
+      sizing_options_heading: Größenoptionen
+      minimum_thickness_text: Mindestdicke (em)
+      maximum_size_text: Maximale Größe (em)
+      macros_label: Makros
+      macros_text: Eine Sammlung benutzerdefinierter Makros.
+      java_syntax_text: Sie müssen sie mit JavaScript-Syntax schreiben.
+      maximum_expand_limit_text: Maximales Erweiterungslimit
+      enable_fleqn_label: Linksbündige Gleichungen aktivieren (fleqn)
+      enable_leqno_label: Linke Gleichungsnummern aktivieren (leqno)
+      color_is_text_color_label: <code>\color</code>-Befehl erlauben, zwei Argumente zu akzeptieren (colorIsTextColor)
+      throw_on_error_label: Fehler bei nicht unterstütztem Befehl oder ungültigem LaTeX auslösen
+      bbcode_delimiters_rule_text: BBCode-Trennzeichen dürfen nur aus Groß- oder Kleinbuchstaben und Bindestrichen bestehen.
+      cdn_options_heading: CDN-Optionen
+      cdn_katex_text: CDN-URL für <strong>KaTeX</strong>
+      sri_katex_text: SRI-Hash für <strong>KaTeX</strong>
+      cdn_asciimath2tex_text: CDN-URL für <strong>asciimath2tex</strong>
+      sri_asciimath2tex_text: SRI-Hash für <strong>asciimath2tex</strong>
+      other_options_heading: Weitere Optionen
+      enable_editor_buttons_label: Schaltflächen im Texteditor anzeigen
+      aliases_as_primary_label: Alias-Trennzeichen als primäre Trennzeichen verwenden, wenn möglich
+      allow_asciimath_label: AsciiMath-Syntax erlauben
+      enable_copy_tex_label: Kopieren der Quelle von KaTeX-gerenderten Elementen erlauben
+      quote_button_text: Sie müssen die <code>flarum/mentions</code>-Erweiterung aktivieren, um die Zitatschaltfläche zu aktivieren.
+
+  forum:
+    composer:
+      block_expression: Blockausdruck
+      block_expression_asciimath: Blockausdruck (AsciiMath)
+      inline_expression: Inline-Ausdruck
+      inline_expression_asciimath: Inline-Ausdruck (AsciiMath)
+      asciimath_only: Nur AsciiMath

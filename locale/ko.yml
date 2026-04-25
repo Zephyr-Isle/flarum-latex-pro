@@ -1,0 +1,50 @@
+zephyrisle-latex-pro:
+  admin:
+    settings:
+      katex_options_heading: KaTeX 옵션
+      delimiters_label: 구분 기호
+      delimiters_text: 쉼표로 구분합니다. <strong>%e%</strong>는 수학 표현식을 나타냅니다.
+      block_delimiters_text: 블록 표현식의 <strong>BBCode</strong> 구분 기호
+      inline_delimiters_text: 인라인 표현식의 <strong>BBCode</strong> 구분 기호
+      alias_block_delimiters_text: 블록 표현식의 <strong>별칭</strong> 구분 기호
+      alias_inline_delimiters_text: 인라인 표현식의 <strong>별칭</strong> 구분 기호
+      block_asciimath_delimiters_text: 블록 AsciiMath 표현식의 <strong>BBCode</strong> 구분 기호
+      inline_asciimath_delimiters_text: 인라인 AsciiMath 표현식의 <strong>BBCode</strong> 구분 기호
+      alias_block_asciimath_delimiters_text: 블록 AsciiMath 표현식의 <strong>별칭</strong> 구분 기호
+      alias_inline_asciimath_delimiters_text: 인라인 AsciiMath 표현식의 <strong>별칭</strong> 구분 기호
+      primary_delimiters_text: 위 목록의 첫 번째 구분 기호가 기본 구분 기호로 간주됩니다.
+      output_mode_label: 출력 모드
+      output_mode_text: 출력용 마크업 언어 선택
+      error_color_label: 지원되지 않는 명령 또는 잘못된 LaTeX의 색상
+      error_color_text: <strong>오류 발생이 비활성화된 경우</strong> 지원되지 않는 명령과 잘못된 LaTeX가 렌더링되는 색상을 선택합니다.
+      sizing_options_heading: 크기 옵션
+      minimum_thickness_text: 최소 두께 (em)
+      maximum_size_text: 최대 크기 (em)
+      macros_label: 매크로
+      macros_text: 사용자 정의 매크로 모음입니다.
+      java_syntax_text: JavaScript 구문을 사용하여 작성해야 합니다.
+      maximum_expand_limit_text: 최대 확장 제한
+      enable_fleqn_label: 왼쪽 정렬 방정식 활성화 (fleqn)
+      enable_leqno_label: 왼쪽 방정식 번호 활성화 (leqno)
+      color_is_text_color_label: <code>\color</code> 명령이 두 개의 인수를 받도록 허용 (colorIsTextColor)
+      throw_on_error_label: 지원되지 않는 명령 또는 잘못된 LaTeX에서 오류 발생
+      bbcode_delimiters_rule_text: BBCode 구분 기호는 대문자 또는 소문자와 대시로만 구성되어야 합니다.
+      cdn_options_heading: CDN 옵션
+      cdn_katex_text: <strong>KaTeX</strong>의 CDN URL
+      sri_katex_text: <strong>KaTeX</strong>의 SRI 해시
+      cdn_asciimath2tex_text: <strong>asciimath2tex</strong>의 CDN URL
+      sri_asciimath2tex_text: <strong>asciimath2tex</strong>의 SRI 해시
+      other_options_heading: 기타 옵션
+      enable_editor_buttons_label: 텍스트 편집기에 버튼 표시
+      aliases_as_primary_label: 가능한 경우 별칭 구분 기호를 기본 구분 기호로 사용
+      allow_asciimath_label: AsciiMath 구문 허용
+      enable_copy_tex_label: KaTeX 렌더링 요소의 소스 복사 허용
+      quote_button_text: 인용 버튼을 활성화하려면 <code>flarum/mentions</code> 확장 프로그램을 활성화해야 합니다.
+
+  forum:
+    composer:
+      block_expression: 블록 표현식
+      block_expression_asciimath: 블록 표현식 (AsciiMath)
+      inline_expression: 인라인 표현식
+      inline_expression_asciimath: 인라인 표현식 (AsciiMath)
+      asciimath_only: AsciiMath만

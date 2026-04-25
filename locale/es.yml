@@ -1,0 +1,50 @@
+zephyrisle-latex-pro:
+  admin:
+    settings:
+      katex_options_heading: Opciones de KaTeX
+      delimiters_label: Delimitadores
+      delimiters_text: Sepárelos con comas. <strong>%e%</strong> representa la expresión matemática.
+      block_delimiters_text: Delimitadores <strong>BBCode</strong> para expresiones de bloque
+      inline_delimiters_text: Delimitadores <strong>BBCode</strong> para expresiones en línea
+      alias_block_delimiters_text: Delimitadores <strong>alias</strong> para expresiones de bloque
+      alias_inline_delimiters_text: Delimitadores <strong>alias</strong> para expresiones en línea
+      block_asciimath_delimiters_text: Delimitadores <strong>BBCode</strong> para expresiones AsciiMath de bloque
+      inline_asciimath_delimiters_text: Delimitadores <strong>BBCode</strong> para expresiones AsciiMath en línea
+      alias_block_asciimath_delimiters_text: Delimitadores <strong>alias</strong> para expresiones AsciiMath de bloque
+      alias_inline_asciimath_delimiters_text: Delimitadores <strong>alias</strong> para expresiones AsciiMath en línea
+      primary_delimiters_text: Los primeros delimitadores de las listas anteriores se considerarán principales.
+      output_mode_label: Modo de salida
+      output_mode_text: Elija el lenguaje de marcado para la salida
+      error_color_label: Color de comandos no compatibles o LaTeX no válido
+      error_color_text: Elija el color en el que se representan los comandos no compatibles y el LaTeX no válido <strong>cuando el lanzamiento de errores está deshabilitado</strong>.
+      sizing_options_heading: Opciones de tamaño
+      minimum_thickness_text: Grosor mínimo (em)
+      maximum_size_text: Tamaño máximo (em)
+      macros_label: Macros
+      macros_text: Una colección de macros personalizadas.
+      java_syntax_text: Debe escribirlas usando la sintaxis de JavaScript.
+      maximum_expand_limit_text: Límite máximo de expansión
+      enable_fleqn_label: Habilitar ecuaciones alineadas a la izquierda (fleqn)
+      enable_leqno_label: Habilitar números de ecuación a la izquierda (leqno)
+      color_is_text_color_label: Permitir que el comando <code>\color</code> tome dos argumentos (colorIsTextColor)
+      throw_on_error_label: Lanzar un error en comando no compatible o LaTeX no válido
+      bbcode_delimiters_rule_text: Los delimitadores BBCode deben estar compuestos solo por letras mayúsculas o minúsculas y guiones.
+      cdn_options_heading: Opciones de CDN
+      cdn_katex_text: URL de CDN para <strong>KaTeX</strong>
+      sri_katex_text: Hash SRI para <strong>KaTeX</strong>
+      cdn_asciimath2tex_text: URL de CDN para <strong>asciimath2tex</strong>
+      sri_asciimath2tex_text: Hash SRI para <strong>asciimath2tex</strong>
+      other_options_heading: Otras opciones
+      enable_editor_buttons_label: Mostrar botones en el editor de texto
+      aliases_as_primary_label: Usar delimitadores alias como delimitadores principales si es posible
+      allow_asciimath_label: Permitir sintaxis AsciiMath
+      enable_copy_tex_label: Permitir copiar la fuente de elementos renderizados por KaTeX
+      quote_button_text: Debe habilitar la extensión <code>flarum/mentions</code> para activar el botón de cita.
+
+  forum:
+    composer:
+      block_expression: Expresión de bloque
+      block_expression_asciimath: Expresión de bloque (AsciiMath)
+      inline_expression: Expresión en línea
+      inline_expression_asciimath: Expresión en línea (AsciiMath)
+      asciimath_only: Solo AsciiMath

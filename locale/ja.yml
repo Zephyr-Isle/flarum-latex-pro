@@ -1,0 +1,50 @@
+zephyrisle-latex-pro:
+  admin:
+    settings:
+      katex_options_heading: KaTeX オプション
+      delimiters_label: 区切り文字
+      delimiters_text: カンマで区切ります。<strong>%e%</strong> は数式を表します。
+      block_delimiters_text: ブロック式の <strong>BBCode</strong> 区切り文字
+      inline_delimiters_text: インライン式の <strong>BBCode</strong> 区切り文字
+      alias_block_delimiters_text: ブロック式の<strong>エイリアス</strong>区切り文字
+      alias_inline_delimiters_text: インライン式の<strong>エイリアス</strong>区切り文字
+      block_asciimath_delimiters_text: ブロック AsciiMath 式の <strong>BBCode</strong> 区切り文字
+      inline_asciimath_delimiters_text: インライン AsciiMath 式の <strong>BBCode</strong> 区切り文字
+      alias_block_asciimath_delimiters_text: ブロック AsciiMath 式の<strong>エイリアス</strong>区切り文字
+      alias_inline_asciimath_delimiters_text: インライン AsciiMath 式の<strong>エイリアス</strong>区切り文字
+      primary_delimiters_text: 上記のリストの最初の区切り文字が主要な区切り文字として扱われます。
+      output_mode_label: 出力モード
+      output_mode_text: 出力のマークアップ言語を選択
+      error_color_label: サポートされていないコマンドまたは無効な LaTeX の色
+      error_color_text: <strong>エラースローが無効の場合</strong>にサポートされていないコマンドと無効な LaTeX がレンダリングされる色を選択します。
+      sizing_options_heading: サイズオプション
+      minimum_thickness_text: 最小の太さ (em)
+      maximum_size_text: 最大サイズ (em)
+      macros_label: マクロ
+      macros_text: カスタムマクロのコレクション。
+      java_syntax_text: JavaScript の構文を使用して記述する必要があります。
+      maximum_expand_limit_text: 最大展開制限
+      enable_fleqn_label: 左揃え方程式を有効にする (fleqn)
+      enable_leqno_label: 左側の方程式番号を有効にする (leqno)
+      color_is_text_color_label: <code>\color</code> コマンドが2つの引数を取ることを許可 (colorIsTextColor)
+      throw_on_error_label: サポートされていないコマンドまたは無効な LaTeX でエラーをスロー
+      bbcode_delimiters_rule_text: BBCode 区切り文字は、大文字または小文字とダッシュのみで構成する必要があります。
+      cdn_options_heading: CDN オプション
+      cdn_katex_text: <strong>KaTeX</strong> の CDN URL
+      sri_katex_text: <strong>KaTeX</strong> の SRI ハッシュ
+      cdn_asciimath2tex_text: <strong>asciimath2tex</strong> の CDN URL
+      sri_asciimath2tex_text: <strong>asciimath2tex</strong> の SRI ハッシュ
+      other_options_heading: その他のオプション
+      enable_editor_buttons_label: テキストエディタにボタンを表示
+      aliases_as_primary_label: 可能な場合はエイリアス区切り文字を主要な区切り文字として使用
+      allow_asciimath_label: AsciiMath 構文を許可
+      enable_copy_tex_label: KaTeX レンダリング要素のソースのコピーを許可
+      quote_button_text: 引用ボタンを有効にするには、<code>flarum/mentions</code> 拡張機能を有効にする必要があります。
+
+  forum:
+    composer:
+      block_expression: ブロック式
+      block_expression_asciimath: ブロック式 (AsciiMath)
+      inline_expression: インライン式
+      inline_expression_asciimath: インライン式 (AsciiMath)
+      asciimath_only: AsciiMath のみ
